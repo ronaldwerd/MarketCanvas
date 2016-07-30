@@ -1,2 +1,2 @@
 # MarketCanvas
-Canvas for rendering market data.
+# Canvas for rendering market data.
