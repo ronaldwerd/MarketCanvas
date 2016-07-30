@@ -1,15 +1,17 @@
 package com.app.rdc.marketcanvas.World;
 
-// import lombok;
-
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Data
+import java.util.Date;
+
+@Getter
+@Setter
 public class MarketBlock {
+    private float priceOpen;
     private float priceHigh;
     private float priceLow;
     private float priceClose;
-    private int timeStamp;
+    private int volume;
+    private Date timeStamp;
 }

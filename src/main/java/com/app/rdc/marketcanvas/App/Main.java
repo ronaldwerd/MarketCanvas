@@ -8,7 +8,9 @@
 
 package com.app.rdc.marketcanvas.App;
 
+import com.app.rdc.marketcanvas.Feed.History;
 import com.app.rdc.marketcanvas.World.MarketBlock;
+import com.app.rdc.marketcanvas.World.World;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -22,6 +24,8 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+import java.util.List;
 
 public class Main extends Application {
 
@@ -180,7 +184,11 @@ public class Main extends Application {
      */
 
     private void demonstrate() {
+        History history = new History();
+        List<MarketBlock> blocks = history.OpenFromDisk("support/GBPUSD60.csv");
 
+        World world = new World(60);
+        world.setBlocks(blocks);
     }
 
     public static void main(String[] args) {
