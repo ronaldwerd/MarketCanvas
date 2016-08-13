@@ -6,7 +6,7 @@
  * @since   2016-07-29
  */
 
-package com.app.rdc.marketcanvas.Feed;
+package com.app.rdc.marketcanvas.Feed.Other;
 
 import com.app.rdc.marketcanvas.World.MarketBlock;
 import org.apache.commons.csv.CSVFormat;
@@ -23,7 +23,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class History {
+public class MetaTrader4 {
 
     private DateFormat MT4CSVDateFormat = new SimpleDateFormat("yyyy.MM.dd hh:mm");
 

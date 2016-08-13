@@ -12,10 +12,10 @@ public class Settings {
 
     private static Settings instance = null;
 
-    public int APP_WIDTH = 800;
-    public int APP_HEIGHT = 600;
+    public int APP_WIDTH = 640;
+    public int APP_HEIGHT = 480;
 
-    public String APP_NAME = "Market Canvas";
+    public String APP_NAME = "Market MarketCanvas";
 
     public int DEFAULT_TF = 3;
 
